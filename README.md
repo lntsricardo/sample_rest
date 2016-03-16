@@ -11,7 +11,7 @@ Other technologies used are:
 Assuming that you have a Maven and Java 1.8 installed in your environment, you just need to checkout the project from https://github.com/lntsricardo/sample_rest.git. After that, just run the following command inside of your project:
 > mvn clean install
 
-This will generate the SampleRest-0.0.1-SNAPSHOT.jar inside the directory **target**.
+This will generate the **SampleRest-0.0.1-SNAPSHOT.jar** inside the directory **target/**.
 
 
 ### Running
