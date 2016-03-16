@@ -23,9 +23,9 @@ The application will start a Tomcat embedded on port 8080.
 
 ### Creating
 
-> http://localhost:8080/create?name=name&age=age
+> http://localhost:8080/person/create?name=name&age=age
 
 ### Finding
 
-> http://localhost:8080/find?name=name
-> http://localhost:8080/findAll
+> http://localhost:8080/person/find?name=name
+> http://localhost:8080/person/findAll
