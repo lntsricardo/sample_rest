@@ -1,32 +1,25 @@
 package com.sample.project.model.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
-@Entity(name="person")
+import org.springframework.data.annotation.Id;
+
 public class Person {
 	
-	private Long id;
+	private String id;
 	private String name;
 	private Integer age;
 
 	@Id
-	@Column
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
 	@NotNull
-	@Column
 	public String getName() {
 		return name;
 	}
@@ -35,7 +28,6 @@ public class Person {
 		this.name = name;
 	}
 
-	@Column
 	public Integer getAge() {
 		return age;
 	}
